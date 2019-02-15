@@ -9,6 +9,30 @@ app.use(express.static('public'));
 
 var io = socket(server);
 
+connections = [];
+
 io.on('connection', function(socket){
-	console.log('Made socket connection ', socket.id);
+	connections.push(socket);
+	console.log('%s Sockets connected', connections.length );
+
+	socket.on('chat', function(data){
+	io.sockets.emit('chat', data);
 });
+	
+ socket.on('disconnect', function(){
+ 	connections.splice(connections.indexOf(socket),1);
+ 	console.log('%s Sockets connected' , connections.length);
+
+ });
+
+
+
+
+
+
+});
+
+
+//MESSAGE
+
+
