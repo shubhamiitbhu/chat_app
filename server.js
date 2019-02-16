@@ -11,6 +11,7 @@ var io = socket(server);
 
 connections = [];
 
+
 io.on('connection', function(socket){
 	connections.push(socket);
 	console.log('%s Sockets connected', connections.length );
@@ -18,6 +19,8 @@ io.on('connection', function(socket){
 	socket.on('chat', function(data){
 	io.sockets.emit('chat', data);
 });
+
+	
 	
  socket.on('disconnect', function(){
  	connections.splice(connections.indexOf(socket),1);
@@ -25,14 +28,7 @@ io.on('connection', function(socket){
 
  });
 
-
-
-
-
-
 });
 
-
-//MESSAGE
 
 
