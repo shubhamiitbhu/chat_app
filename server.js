@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 var io = socket(server);
 
-connections = [];
+connections= [];
 
 
 io.on('connection', function(socket){
@@ -22,7 +22,7 @@ io.on('connection', function(socket){
 
 	
 	
- socket.on('disconnect', function(){
+ io.on('disconnect', function(){
  	connections.splice(connections.indexOf(socket),1);
  	console.log('%s Sockets connected' , connections.length);
 
