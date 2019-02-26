@@ -1,74 +1,69 @@
+
 var socket = io.connect('http://localhost:3000');
 var message = document.getElementById('message');
 var handle = document.getElementById('handle');
 var btn = document.getElementById('send');
 var output = document.getElementById('output');
+var join = document.getElementById('join');
 
+
+
+// ES6
 
 //emit
-handle.addEventListener('keyup',function(e){
-	if(e.keyCode===13)
-	{if(message.value && handle.value)
-	{
-	socket.emit('chat', {
-		message: message.value,
-		handle: handle.value
-	});}
-
-else
-{
-	noti.innerHTML = '<p>' + 'ERROR! : ' + 'No message or Handle found' + '</p>';
-}}
-
-});
-
-
-message.addEventListener('keyup',function(e){
-	if(e.keyCode===13)
-	{if(message.value && handle.value)
-	{
-	socket.emit('chat', {
-		message: message.value,
-		handle: handle.value
-	});}
-
-else
-{
-	noti.innerHTML = '<p>' + 'ERROR! : ' + 'No message or Handle found' + '</p>';
-}}
-
-});
-
 
 
 btn.addEventListener('click', function(){
 
-	if(message.value && handle.value)
+	if(handle.value && message.value)
 	{
 	socket.emit('chat', {
+		handle: handle.value,
 		message: message.value,
-		handle: handle.value
+		
 	});}
 
 else
 {
-	noti.innerHTML = '<p>' + 'ERROR! : ' + 'No message or Handle found' + '</p>';
+	if(handle.value)
+	{alert("Please enter the message");}
+    else 
+    {
+    	alert("Please enter your Username")
+    }
+   
 }
+
+});
+
+
+join.addEventListener('click', function(){
+
+	socket.emit('user', {
+		handle: handle.value,
+	});
+});
+
+
+
+socket.on('user', function(data){
+
+
+
+	joinNotification.innerHTML += '<p>'+ data.handle + ' joined the chat' + '</p>';
+    
 
 });
 
 
 socket.on('chat', function(data){
 
-	noti.innerHTML = '<p>' + '</p>';
+	
 
-	output.innerHTML += '<p>' + '<strong>' + '<span id="sb">'+ data.handle+ '</span>'  + '</strong>' + ': ' + '<span id="ssb">' + data.message + '</span>' + '</p>';
-    message.value="";
-    handle.value="";
+	output.innerHTML += '<div id="bubble"> <p>' + '</strong>'  + '<div id="textmessage" >'+ '<strong>'+ data.handle +'</strong><hr />'+ data.message + '</div>' + '</p><br /></div>';
+    
 
 });
-
- 
 
 
 

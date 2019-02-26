@@ -16,8 +16,16 @@ io.on('connection', function(socket){
 	connections.push(socket);
 	console.log('%s Sockets connected', connections.length );
 
+
+	socket.on('user', function(data){
+socket.broadcast.emit('user', data);
+});
+
 	socket.on('chat', function(data){
 	io.sockets.emit('chat', data);
+
+});
+
 });
 
 	
@@ -28,7 +36,7 @@ io.on('connection', function(socket){
 
  });
 
-});
+
 
 
 

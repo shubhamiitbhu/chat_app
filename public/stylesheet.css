@@ -1,21 +1,107 @@
-#msg
+body{
+    margin-top:10px;
+}
+
+button
 {
-  background-color: #DCDCDC;
+	display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  
+  box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#send
+{
+	margin-left: 83%;
+    margin-top: -3.3%;
+    width:5%;
+    height:50px;
+}
+#join
+{
+
+
+margin-left:0%;
+}
+#message
+{
+	width:35%;
+	height:50px;
+
+margin-left: 48%;
+
+
 
 }
 
-#sb
+#handle
 {
-  color: blue;
-  font-size: 15px;
+	
+	width:20%;
+	height:30px;
+	left:3%;
+	top:10%;
 }
 
-#ssb
+#label
 {
-  font-size: 15px;
+	font-size: 30px;
+	background-color: 33B0FF;
+	color: white;
+	padding-right: 42.2%;
+	padding-top:20px;
+	padding-bottom: 15px;
+	box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: 25%;
 }
-#onl
+
+
+
+
+#output
 {
-  font-size: 15px;
-  color: : green;
+	height:85%;
+	width: 40%;
+	background-color: #F0F0F0;
+	margin-left: 48%;
+	
+	border: 1px solid #A9A9A9;
+	box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow-x: auto;
+	overflow-y: auto;
+	border-bottom-right-radius: 40px;
+	border-top-left-radius: 40px;
+
+}
+#bubble
+{
+	background-color: white;
+	margin-left:5%;
+	margin-right:10%;
+  border-radius:20px 50px;
+  word-wrap: break-word;
+
+}
+#textmessage
+{
+	padding-left: 20px;
+	padding-top: 3px;
+	padding-right: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+strong
+{
+	color: #B22222;
+	font-size: 18px;
 }
