@@ -50,7 +50,7 @@ socket.on('user', function(data){
 
 
 
-	joinNotification.innerHTML += '<p>'+ data.handle + ' joined the chat' + '</p>';
+	output.innerHTML +=  '<p style="text-align:center; background-color: white; padding:10px;">'+ '<strong>'+data.handle+'</strong>' + ' joined the chat' + '</p>';
     
 
 });

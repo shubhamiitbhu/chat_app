@@ -4,29 +4,37 @@
 <script src ="/angular.min.js"></script>
 <script src ="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"> </script>
 <link href="/stylesheet.css" rel="stylesheet" />
-<script src='https://cdn.rawgit.com/heatherbooker/vue-sticky-scroll/master/stickyScroll.js'></script>
+<script src="/frontend.js"></script>
 
 </head>
 
 
 <body>
 	
+		
+	
+	                    <div id="initialise">
                         <input id="handle" placeholder="Handle" type="text" class="form-control" />
-                        <button id="join" onclick='readonly()' >Join </button> <br />
-
-                        <div id="output" v-chat-scroll="{always: false, smooth: true}"> </div>
-                        <div id="joinNotification"> </div>
-
-
-                        <input id="message" placeholder="message" type="text" class="form-control" />
+                       <input id= "join" onclick="readonly()" type="button" value="Join" /> 
+                       </div>
+                      
+                        <div id="contentwrap" style="display: none;">
+                        <div id="output"> </div>
+                         <input id="message" placeholder="message" type="text" class="form-control" />
                         
-                        <button id="send"> Send </button>
+                        <button id="send" > Send </button>
+                        </div>
+                        
+
+
+                       
+                    
                    
          
 
 <script src="/chat.js" > </script>
 
-<script src="/frontend.js"></script>
+
 
 
 </body>

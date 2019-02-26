@@ -2,6 +2,10 @@ body{
     margin-top:10px;
 }
 
+
+
+
+
 button
 {
 	display: inline-block;
@@ -20,6 +24,8 @@ button
   box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+
 #send
 {
 	margin-left: 83%;
@@ -29,7 +35,20 @@ button
 }
 #join
 {
-
+display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  
+  box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 margin-left:0%;
 }
@@ -67,9 +86,9 @@ margin-left: 48%;
 
 
 
-
 #output
 {
+
 	height:85%;
 	width: 40%;
 	background-color: #F0F0F0;
@@ -77,10 +96,11 @@ margin-left: 48%;
 	
 	border: 1px solid #A9A9A9;
 	box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	overflow-x: auto;
+	overflow-x: hidden;
 	overflow-y: auto;
-	border-bottom-right-radius: 40px;
+	border-top-right-radius: 40px;
 	border-top-left-radius: 40px;
+   display: inline-block;
 
 }
 #bubble
@@ -105,3 +125,20 @@ strong
 	color: #B22222;
 	font-size: 18px;
 }
+
+#container
+{
+	height:85%;
+	width: 10%;
+	background-color: #F0F0F0;
+	margin-left: 5%;
+	
+	border: 1px solid #A9A9A9;
+	box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+	border-top-right-radius: 40px;
+	border-top-left-radius: 40px;
+	display: inline-block;
+	
+}
+
