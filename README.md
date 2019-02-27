@@ -2,7 +2,7 @@
 
 This is a real-time chat application built on NodeJS, ExpressJS, Socket.io for server side, AngularJS for client side and MongoDB for database storage.
 
-Procedure to deploy the app: i) Install Node and then install the node packages by using package.json (already done).
+Procedure to deploy the app: i) Install Node and then install the node packages by using package.json (already done). <br />
 ii.a) Download and install MongoDB on local server.
 ii.b) Make a directory C:\data and C:\data\db.
 ii.c) Open bin folder in MongoDB. 
