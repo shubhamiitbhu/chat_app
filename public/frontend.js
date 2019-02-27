@@ -13,7 +13,7 @@ function readonly() {
   var hand = document.getElementById("handle");
   var contentwrap = document.getElementById("contentwrap");
   var initialise = document.getElementById("initialise");
-  if(hand.value)
+  if(hand.value && contentwrap.style.display == 'none')
   {
 
     
@@ -24,6 +24,8 @@ function readonly() {
     alert("Sucessfully joined the chat");
    }, 300);
   }
+
+
   else
   {
   	alert("Please enter username before clicking on Join button");
@@ -38,7 +40,10 @@ function readonly() {
 
 }
 
-
+window.onbeforeunload = function()
+{
+  return "Load";
+}
 
 
 

@@ -11,7 +11,7 @@
 </head>
 
 
-<body>
+<body ng-controller="AppController">
 	
 		
 	
@@ -22,7 +22,7 @@
                        <input id= "join" onclick="readonly()" type="button" value="Join" /> 
                        </div>
                       
-                        <div id="contentwrap" style="display: none;">
+                        <div id="contentwrap" style="display: none; onbeforeunload="return yourfunction()">
                             <div id="header" style="font-family: 'Inconsolata', monospace; text-align:center;"> <span style="color:White; font-weight: 20px; font-size: 30px;" >Welcome <strong style="color:white; font-size: 30px;"> {{name}},</strong>   <div style="color:green; display: inline;"> </div>You are online now </span> </div>
                        
                         <span id="output"> </span>
