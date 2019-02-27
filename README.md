@@ -11,7 +11,8 @@ The above steps will allow you to use C:\data\db as your database.<br />
 iii) Open command line and set current directory to the chat_app folder. The app runs on local server 3000. <br />
 Type command "node server" in cmd.<br />
 iv) Goto <strong> "http://localhost:3000/" </strong> on browser. Then follow the instructions.
-
+<hr /> 
+<h3> Images </h3>
 ![main](https://user-images.githubusercontent.com/28799334/53494312-76f03c00-3ac3-11e9-906f-9f8aec69085f.PNG)
 ![message](https://user-images.githubusercontent.com/28799334/53494321-7c4d8680-3ac3-11e9-9a64-6763403acf20.PNG)
 ![sent](https://user-images.githubusercontent.com/28799334/53494323-7e174a00-3ac3-11e9-8fb4-42d68a7eab90.PNG)
