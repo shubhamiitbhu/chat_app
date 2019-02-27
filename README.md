@@ -10,7 +10,9 @@ ii.d) open command line tool and write $ mongod.exe --dbpath "C:\data\db" <br />
 The above steps will allow you to use C:\data\db as your database.<br />
 iii) Open command line and set current directory to the chat_app folder. The app runs on local server 3000. <br />
 Type command "node server" in cmd.<br />
-iv) Goto "http://localhost:3000/" on browser. Then follow the instructions.
+iv) Goto <strong> "http://localhost:3000/" </strong> on browser. Then follow the instructions.
+
+
 
 
 
