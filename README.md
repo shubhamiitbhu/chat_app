@@ -13,14 +13,14 @@ Type command "node server" in cmd.<br />
 iv) Goto <strong> "http://localhost:3000/" </strong> on browser. Then follow the instructions.
 <hr /> 
 <h3> Images </h3>
-![main](https://user-images.githubusercontent.com/28799334/53494312-76f03c00-3ac3-11e9-906f-9f8aec69085f.PNG)
-![message](https://user-images.githubusercontent.com/28799334/53494321-7c4d8680-3ac3-11e9-9a64-6763403acf20.PNG)
-![sent](https://user-images.githubusercontent.com/28799334/53494323-7e174a00-3ac3-11e9-8fb4-42d68a7eab90.PNG)
-![newuser](https://user-images.githubusercontent.com/28799334/53494325-7f487700-3ac3-11e9-8f26-388c89bae1b3.PNG)
-![join notification](https://user-images.githubusercontent.com/28799334/53494332-82436780-3ac3-11e9-8448-eb74dcce1186.PNG)
-![sent user](https://user-images.githubusercontent.com/28799334/53494335-84a5c180-3ac3-11e9-829e-5e440a2f18a8.PNG)
-![recieved user](https://user-images.githubusercontent.com/28799334/53494347-8bcccf80-3ac3-11e9-8503-7e6a37d49aca.PNG)
 
+![main](https://user-images.githubusercontent.com/28799334/53494448-d1899800-3ac3-11e9-8357-3a21e4f3e3ff.PNG)
+![message](https://user-images.githubusercontent.com/28799334/53494462-d77f7900-3ac3-11e9-9b9a-697853aeace4.PNG)
+![sent](https://user-images.githubusercontent.com/28799334/53494463-d77f7900-3ac3-11e9-8639-4d3a310a61f5.PNG)
+![newuser](https://user-images.githubusercontent.com/28799334/53494466-d8180f80-3ac3-11e9-8f6e-64437a12a0b1.PNG)
+![join notification](https://user-images.githubusercontent.com/28799334/53494469-d8180f80-3ac3-11e9-9c9c-5766b3e6e9ac.PNG)
+![sent user](https://user-images.githubusercontent.com/28799334/53494477-dd755a00-3ac3-11e9-99bd-41f98059c3ce.PNG)
+![recieved user](https://user-images.githubusercontent.com/28799334/53494479-de0df080-3ac3-11e9-8794-cdc8e179e663.PNG)
 
 
 
