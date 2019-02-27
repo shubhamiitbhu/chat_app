@@ -13,6 +13,7 @@ Type command "node server" in cmd.<br />
 iv) Goto <strong> "http://localhost:3000/" </strong> on browser. Then follow the instructions.
 
 
+![main](https://user-images.githubusercontent.com/28799334/53493687-f4b34800-3ac1-11e9-8e2a-6d33ad89e3c1.PNG)
 
 
 
