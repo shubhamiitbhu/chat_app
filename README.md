@@ -12,7 +12,7 @@ iii) Open command line and set current directory to the chat_app folder. The app
 Type command "node server" in cmd.<br />
 iv) Goto <strong> "http://localhost:3000/" </strong> on browser. Then follow the instructions.
 
-
+<h3> Images </h3><br />
 ![main](https://user-images.githubusercontent.com/28799334/53493687-f4b34800-3ac1-11e9-8e2a-6d33ad89e3c1.PNG)
 
 
