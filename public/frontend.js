@@ -20,7 +20,9 @@ function readonly() {
     contentwrap.style.display = 'block';
     initialise.style.display = 'none';
     
-   alert('Sucessfully joined the chat');
+   setTimeout(function(){
+    alert("Sucessfully joined the chat");
+   }, 300);
   }
   else
   {
@@ -35,6 +37,22 @@ function readonly() {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

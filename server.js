@@ -14,17 +14,14 @@ var io = socket(server);
 
 io.on('connection', function(socket){
 	
-
-	socket.on('user', function(data){
-socket.broadcast.emit('user', data);
-});
-
 	socket.on('chat', function(data){
+		connects.push(data.handle);
 	io.sockets.emit('chat', data);
 
-});
-});
 
+});
+});
+     
 	
 
 	

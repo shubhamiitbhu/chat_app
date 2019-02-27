@@ -5,7 +5,7 @@ var handle = document.getElementById('handle');
 var btn = document.getElementById('send');
 var output = document.getElementById('output');
 var join = document.getElementById('join');
-
+var connects = document.getElementById('connects');
 
 
 // ES6
@@ -37,10 +37,12 @@ else
 });
 
 
+
 join.addEventListener('click', function(){
 
 	socket.emit('user', {
-		handle: handle.value,
+		handle: handle.value
+
 	});
 });
 
@@ -50,20 +52,22 @@ socket.on('user', function(data){
 
 
 
-	output.innerHTML +=  '<p style="text-align:center; background-color: white; padding:10px;">'+ '<strong>'+data.handle+'</strong>' + ' joined the chat' + '</p>';
+	output.innerHTML +=  '<p style="text-align:center; background-color: white; padding:10px; border: 1px solid white;">'+ '<strong>'+data.handle+'</strong>' + ' joined the chat' + '</p>';
     
 
 });
+
 
 
 socket.on('chat', function(data){
 
 	
 
-	output.innerHTML += '<div id="bubble"> <p>' + '</strong>'  + '<div id="textmessage" >'+ '<strong>'+ data.handle +'</strong><hr />'+ data.message + '</div>' + '</p><br /></div>';
-    
+	output.innerHTML += ' <div id="bubble" > <p>' + '<div id="textmessage" >'+ '<strong>'+ data.handle  +'</strong><hr />'+ data.message + '</div>' + '</p><br /></div>';
+   
 
 });
+
 
 
 
