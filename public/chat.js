@@ -5,7 +5,29 @@ var handle = document.getElementById('handle');
 var btn = document.getElementById('send');
 var output = document.getElementById('output');
 var join = document.getElementById('join');
-var connects = document.getElementById('connects');
+
+socket.on('user',function(data){
+	output.innerHTML +=  '<p style="text-align:center; background-color: white; padding:10px; border: 1px solid white;">'+ '<strong>'+data.handle+'</strong>' + ' joined the chat' + '</p>';
+    output.scrollTop = output.scrollHeight;
+})
+
+
+
+
+socket.on('output', function(data){
+             //console.log(data);
+                    if(data.length){
+                        for(var x = 0;x < data.length;x++){
+                            // Build out message div
+                            
+	                     output.innerHTML += '<div id="bubble"> <p>' + '</strong>'  + '<div id="textmessage" >'+ '<strong>'+ data[x].handle +'</strong><hr />'+ data[x].message + '</div>' + '</p><br /></div>';
+       
+                        }
+                        output.scrollTop = output.scrollHeight;
+                    }
+                    message.value="";
+                });
+
 
 
 // ES6
@@ -37,36 +59,38 @@ else
 });
 
 
-
 join.addEventListener('click', function(){
-
-	socket.emit('user', {
+if(handle.value)
+	{socket.emit('user', {
 		handle: handle.value
-
-	});
+	})};
 });
 
+//Using Enter key
+message.addEventListener('keyup', function(e){
+if(e.keyCode===13)
+	{if(handle.value && message.value)
+	{
+	socket.emit('chat', {
+		handle: handle.value,
+		message: message.value,
+		
+	});}
 
-
-socket.on('user', function(data){
-
-
-
-	output.innerHTML +=  '<p style="text-align:center; background-color: white; padding:10px; border: 1px solid white;">'+ '<strong>'+data.handle+'</strong>' + ' joined the chat' + '</p>';
-    
-
-});
-
-
-
-socket.on('chat', function(data){
-
-	
-
-	output.innerHTML += ' <div id="bubble" > <p>' + '<div id="textmessage" >'+ '<strong>'+ data.handle  +'</strong><hr />'+ data.message + '</div>' + '</p><br /></div>';
+else
+{
+	if(handle.value)
+	{alert("Please enter the message");}
+    else 
+    {
+    	alert("Please enter your Username")
+    }
    
-
+}
+}
 });
+
+
 
 
 
