@@ -32,7 +32,7 @@ button
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: solid #eeeeee 1px;
+    border-bottom: solid grey 1px;
     padding: 3px 10px;
 font-family: Arial, Helvetica, sans-serif;
 }
