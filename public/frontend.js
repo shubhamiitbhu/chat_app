@@ -1,12 +1,14 @@
 var chatapp = angular.module('chatapp', []);
-chatapp.controller('AppController', function($scope){
 
-	
+chatapp.controller('AppController', function($scope){
+window.onbeforeunload = function()
+{
+  return "Load";
+}
 
 });
 
-
-
+	
 function readonly() {
 
 
@@ -39,15 +41,6 @@ function readonly() {
   }
 
 }
-
-window.onbeforeunload = function()
-{
-  return "Load";
-}
-
-
-
-
 
 
 
